@@ -19,7 +19,7 @@ if [[ $# -eq 2 ]]; then
     evm_path=$2
 elif [[ $# -eq 0 ]]; then
     if [[ ! -d "$coreth_path" ]]; then
-        go get "github.com/Toinounet21/coreth-mod@$coreth_version"
+        go get "github.com/Toinounet21/coreth-mod"
     fi
 else
     echo "Invalid arguments to build coreth. Requires either no arguments (default) or two arguments to specify coreth directory and location to add binary."
